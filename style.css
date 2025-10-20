@@ -27,6 +27,20 @@ body {
     float: left;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 20px; 
+}
+
+
+.logo img {
+  display: flex;
+  align-items: center;
+  height: 70px;
+}
+
+
 header {
   display: flex;
   justify-content: space-between;
@@ -107,4 +121,143 @@ main {
   padding: 15px 0;
   font-size: 14px;
   box-sizing: border-box;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+h2 {
+  font-size: 20px;
+  text-align: center;
+  font-weight: normal;
+}
+
+
+p {
+  font-size: 15px;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.container, .main-wrapper, .big-box {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 20px;           
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  background: transparent; 
+}
+
+body {
+  margin: 0;
+}
+
+.img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.berita-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  gap: 25px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.berita-card {
+  background: #fff;
+  padding: 15px; 
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.25s ease-in-out;
+  width: 100%; 
+  max-width: 400px; 
+  margin: 0 auto; 
+}
+
+.berita-card:hover {
+  transform: translateY(-5px);
+}
+
+.berita-card h3 {
+  font-size: 16px; 
+  margin-bottom: 8px;
+}
+
+.berita-card p {
+  font-size: 13px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.berita-card a {
+  font-size: 13px;
+  color: #007BFF;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.berita-card a:hover {
+  text-decoration: underline;
+}
+
+
+.berita h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+section {
+    margin-top: 50px; 
+}
+
+.fasilitas {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.fasilitas h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.fasilitas-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 kolom */
+  gap: 30px; /* jarak antar item */
+  max-width: 900px;
+  margin: auto;
+}
+
+.fasilitas-item {
+  text-align: center;
+}
+
+.fasilitas-item span {
+  font-size: 40px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.fasilitas-item h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.fasilitas-item p {
+  font-size: 14px;
+  color: #555;
+}
+
+.container {
+    padding: 20px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
 }
