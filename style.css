@@ -1,10 +1,110 @@
-body {
-  background-color: #d68989;
-  color: darkred;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
 }
 
-h1 {
-  font-size: 30 px;
-  font-weight: bold;
+body {
+    font-family: "Segoe UI", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: rgb(240, 248, 255);
+    color: rgb(0, 0, 0);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.navbar {
+    background-color: darkred;
+    color: ghostwhite;
+    padding: 1rem 0;
+}
+
+.navbar .logo {
+    float: left;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #a00000;
+  padding: 10px 40px;
+}
+
+nav a {
+  color: #d68989;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+}
+.navbar .nav-links {
+    list-style: none;
+    float: right;
+}
+
+.navbar .nav-links li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.navbar .nav-links a {
+    color: rgb(254, 248, 255);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+    color: firebrick;
+}
+
+.navbar::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.content {
+    padding: 2rem;
+    background: none;
+    color: black;
+    margin-top: 20px;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+main, section {
+    flex: 1;
+}
+    
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+.footer {
+  width: 100%;
+  background-color: rgb(139, 0, 0);
+  color: #e9e2e2;
   text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+  box-sizing: border-box;
 }
