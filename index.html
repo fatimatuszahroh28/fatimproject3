@@ -1,14 +1,139 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>INI-WEB-FATIM</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Sekolah</title>
     <link rel="stylesheet" href="style.css"/>
-    <link rel = 'website icon' type='png' href= 'LOGO PPLG.png'>
-  </head>
-  <body>
-   <img src="LOGO PPLG.png" alt="Foto profil saya">
-    <h1>FATIMATUS ZAHROH</h1>
-    <p>Siswa SMK yang tertarik dengan teknologi dan desain. Selamat datang di website pertama saya</p>
-    <a href="https://www.instagram.com/ftimzarh">Kunjungi Instagram Saya</a>
-  </body>
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+              <img src="https://smkn1blega.sch.id/theme/images/logo-kecil.png" alt="logo sekolah">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profil.html">Profil</a></li>
+                <li><a href="galeri.html">Galeri</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main id="beranda" class="content active">
+  <h1>Selamat Datang di SMK Negeri 1 Blega</h1>
+  <p>
+    Sekolah unggulan yang berkomitmen untuk mencetak generasi penerus bangsa
+    yang berkarakter, berprestasi, dan berbudi pekerti luhur.
+  </p>
+
+ 
+  <section class="berita">
+    <h2>Berita Terbaru</h2>
+    <div class="berita-container">
+      <div class="berita-card">
+        <h3>Penerimaan Siswa Baru 2026</h3>
+        <p>
+          Pendaftaran siswa baru tahun ajaran 2026/2027 telah dibuka. Segera
+          daftarkan putra/putri Anda di SMK Negeri 1 Blega.
+        </p>
+        <a href="#">Baca Selengkapnya →</a>
+      </div>
+
+      <div class="berita-card">
+        <h3>Siap Mengikuti Lomba LKBB Pamekasan</h3>
+        <p>
+          Jangan lupa dukung PASMEKSAGA di Acara LKBB Pamekasan. Yang akan dilaksanakan pada bulan Desember
+        </p>
+        <a href="#">Baca Selengkapnya →</a>
+      </div>
+
+      <div class="berita-card">
+        <h3>Kegiatan Kunjungan Industri</h3>
+        <p>
+          Setiap jurusan akan melaksanakan kunjungan industri pada bulan
+          November 2026.
+        </p>
+        <a href="#">Baca Selengkapnya →</a>
+      </div>
+
+      <div class="berita-card">
+        <h3>Lomba Padus Se-Jawa Timur</h3>
+        <p>
+          Tim paduan suara SMK Negeri 1 Blega akan mengikuti lomba paduan suara
+          pada 12 Oktober 2026 mendatang.
+        </p>
+        <a href="#">Baca Selengkapnya →</a>
+      </div>
+    </div>
+  </section>
+
+ 
+  <section class="fasilitas">
+    <h2>Fasilitas Sekolah</h2>
+    <div class="fasilitas-container">
+      <div class="fasilitas-item">
+        <span>🛁</span>
+        <h3>Kamar Mandi</h3>
+        <p>
+          SMKN 1 Blega memiliki 6 kamar mandi yang dipisah untuk siswa dan siswi.
+        </p>
+      </div>
+
+      <div class="fasilitas-item">
+        <span>💻</span>
+        <h3>Lab Komputer</h3>
+        <p>
+          Fasilitas komputer terkini untuk mendukung pembelajaran teknologi.
+        </p>
+      </div>
+
+      <div class="fasilitas-item">
+        <span>⚽</span>
+        <h3>Lapangan Olahraga</h3>
+        <p>
+          Lapangan serbaguna untuk berbagai kegiatan olahraga dan ekstrakurikuler.
+        </p>
+      </div>
+
+      <div class="fasilitas-item">
+        <span>🕌</span>
+        <h3>Musolla Sekolah</h3>
+        <p>
+          Bangunan ibadah agar siswa dapat beribadah dengan aman dan nyaman.
+        </p>
+      </div>
+
+      <script>
+  const faders = document.querySelectorAll('.fade-in');
+
+  const appearOptions = {
+    threshold: 0.2,
+    rootMargin: "0px 0px -50px 0px"
+  };
+
+  const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add("show");
+      observer.unobserve(entry.target);
+    });
+  }, appearOptions);
+
+  faders.forEach(fader => {
+    appearOnScroll.observe(fader);
+  });
+</script>
+
+    
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+  <p>&copy; 2025 fatim.semangat belajar membuat web, coding dan desain grafis</p>
+</div>
+</footer>
+</body>
 </html>
